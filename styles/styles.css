@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.background {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container-panel {
+    width: 50%;
+    height: 56.5%;
+    background-color: white;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.4);
+    overflow: scroll;
+}
+
+.container-panel{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
