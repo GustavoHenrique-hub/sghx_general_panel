@@ -11,9 +11,16 @@ html, body {
     min-width: 100vw;
     min-height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.text{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .card-container-panel {
@@ -22,13 +29,92 @@ html, body {
     background-color: white;
     box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.4);
     overflow: scroll;
+    scroll-snap-type: y mandatory;
 }
 
-.container-panel{
+.card-container-panel-content{
     width: 100%;
+    height: 100%;
+    background-color: white;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    scroll-snap-align: start;
+}
+
+.card-container-panel-content-header{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+}
+
+.card-container-panel-content-header-left{
+    width: 15%;
+    height: 80%;
+}
+.card-container-panel-content-header-left img{
+    width: 100%;
+    height: 100%;
+}
+.card-container-panel-content-header-middle{
+    width: 75%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+.sghx-title-text{
+    background: -webkit-linear-gradient(rgb(0,217,212), rgb(0, 134,131));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+}
+
+.sghx-release-notes-text{
+    color: rgb(237, 125, 49);
+    font-size: 30px;
+}
+
+.sghx-improvements-text{
+    color: rgb(0, 255, 255);
+    font-size: 26px;
+}
+
+.sghx-version-text{
+    color: rgb(45, 85, 151);
+    font-size: 18px;
+}
+
+.card-container-panel-content-header-right{
+    width: 15%;
+    height: 80%;
+}
+
+.card-container-panel-content-header-right img{
+    width: 100%;
+    height: 80%;
+}
+
+.card-container-panel-content-main{
+    width: 100%;
+    height: 60%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-container-panel-content-footer{
+    width: 100%;
+    height: 3%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
